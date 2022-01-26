@@ -3,11 +3,11 @@
 const scroller = new LocomotiveScroll({
   el: document.querySelector('[data-scroll-container]'),
   smooth: true,
-  smartphone: {
-    smooth: true
-  },
   tablet: {
     smooth: true
+  },
+  smartphone: {
+    smooth: false
   }
 })
 
@@ -118,9 +118,20 @@ var Expand = (function() {
   Expand.init();
 
 
+/* fadein section home */
+const observer1 = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting) {
+      document.querySelectorAll(".copy")[0].classList.add('fadeInLeft');
+    }
+  })
+})
+
+observer1.observe(document.querySelector('.home'));
+
 
 /* fadein section 2 */
-  const observer = new IntersectionObserver(entries => {
+  const observer2 = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if(entry.isIntersecting) {
         document.querySelectorAll(".pinned-quote")[0].classList.add('fadeInLeft');
@@ -128,11 +139,11 @@ var Expand = (function() {
     })
   })
   
-  observer.observe(document.querySelector('.section-2'));
+  observer2.observe(document.querySelector('.section-2'));
 
 
 /* fadein section 2 - Project Slide */
-const observerss = new IntersectionObserver(entries => {
+const observer3 = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if(entry.isIntersecting) {
       document.querySelectorAll(".slide-content")[0].classList.add('fadeInLeft');
@@ -140,12 +151,12 @@ const observerss = new IntersectionObserver(entries => {
   })
 })
 
-observerss.observe(document.querySelector('.flex'));
+observer3.observe(document.querySelector('.flex'));
 
 
 
 /* fadein section 3 */
-  const observers = new IntersectionObserver(entries => {
+  const observer4 = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if(entry.isIntersecting) {
         document.querySelectorAll(".work")[0].classList.add('fadeInLeft');
@@ -153,7 +164,7 @@ observerss.observe(document.querySelector('.flex'));
     })
   })
   
-  observers.observe(document.querySelector('.section-3'));
+  observer4.observe(document.querySelector('.section-3'));
 
 
 
@@ -207,16 +218,4 @@ observerss.observe(document.querySelector('.flex'));
 
 
 
-
-/* working section flip card */
-document.ontouchmove = function(event){
-    event.preventDefault();
-}
-
-$(document).ready(function(){
-  $('.cci-press-card__wrap').on("click", function(){
-    $(this).toggleClass('rotate-3d');
-    $('.card--back').toggleClass('z-up');
-  })
-})
 

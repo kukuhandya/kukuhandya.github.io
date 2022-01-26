@@ -167,6 +167,17 @@ observer3.observe(document.querySelector('.flex'));
   observer4.observe(document.querySelector('.section-3'));
 
 
+/* fadein contact */
+const observer5 = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting) {
+      document.querySelectorAll(".invitation")[0].classList.add('fadeInLeft');
+    }
+  })
+})
+
+observer5.observe(document.querySelector('.contact'));
+
 
 
 /* project movement */

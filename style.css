@@ -103,7 +103,6 @@
   margin-top: 30vh;
   z-index: -1;
   overflow: hidden;
-  border: 1px solid red;
 }
 /*sticky about*/
 .strips {
@@ -1127,7 +1126,6 @@ div.overlay-blue {
   color: wheat;  
   height: 90vh;
   overflow: hidden;
-  border: 1px solid red;
 }
 .container .section-4 .contact{
   text-align: center;
@@ -2475,6 +2473,9 @@ and (max-device-width: 1279px) {
   and (max-device-width: 375px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
+  .container .home .copy h1 {
+    margin-top: 35vh;
+  }  
   .container .section-1 .image-mask {
     width: 75vw;
     height: 28vh;

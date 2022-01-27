@@ -1419,8 +1419,7 @@ and (device-height: 1024px) {
 }
 
 @media screen
-and (min-device-width: 1024px)
-and (max-device-width: 1279px) {
+and (max-device-width: 1024px) {
   .container .home .copy {
     padding: 0 2rem;
   }
@@ -2334,19 +2333,24 @@ and (max-device-width: 1279px) {
 
 @media only screen  
   and (max-device-width: 926px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 2) {
+  and (orientation: landscape) {
     .container .home {
-      grid-template-columns: 60% 40%;
+      grid-template-columns: 50% 50%;
+    }
+    .container .home .copy{
+      padding: 0 0rem;
     }
     .container .home .copy h1 {
       font-size: 6vmin;
+      margin-top: 40vh;
+      margin-left: 15%;
     }
     .container .home .copy span {
       font-size: 11vmin;
     }
     .container .home .copy p{
       font-size: 4vmin;
+      margin-left: 15%;
     }
     .container .home .image-wrapper img {
       object-fit: contain;
@@ -2362,29 +2366,106 @@ and (max-device-width: 1279px) {
     }
     .container .section-1 {
       height: 100vh;
+      margin-bottom: 10vh;
     }
     .container .section-1 .image-mask {
       width: 70vw;
       height: 85vh;
     }
+    .container .section-2 {
+      margin-left: 0%;
+      grid-template-columns: 15% 30%;
+      column-gap: 50%;
+    }
+    .strips{
+      height: 100vh;
+    }
+    .strip__title{
+      font-size: 5.5vmin;
+      word-wrap: break-word;
+    }
+    .strips__strip:nth-child(1) {
+      height: 100vh;
+      left: 0vw;
+    }
+    .strips__strip:nth-child(2) {
+      height: 100vh;
+      left: 15vw;
+      top: -100.5vh;
+    }
+    .strips__strip:nth-child(3) {
+      height: 100vh;
+      left: 30vw;
+      top: -201vh;
+    }
+    .strips__strip:nth-child(4) {
+      height: 100vh;
+      left: 45vw;
+      top: -301.5vh;
+    }
+    .strips .strip__content:hover:before {
+      transform: skew(-30deg) scale(1) translate(0, 0);
+      opacity: 0.1;
+    }
+    .strips__strip:nth-child(1) .strip__content {
+      background: #120B00;
+    }
+    .strips__strip:nth-child(3) .strip__content {
+      background: #120B00;
+    }
+    .strips__strip--expanded:nth-child(1){
+      width: 405%;
+      height: 100vh;
+    }
+    .strips__strip--expanded:nth-child(2) {
+      width: 405%;
+      height: 100vh;
+      top: -100.5vh;
+    }
+    .strips__strip--expanded:nth-child(3) {
+      width: 405%;
+      height: 100vh;
+      top: -201vh;
+    }
+    .strips__strip--expanded:nth-child(4) {
+      width: 405%;
+      height: 100vh;
+      top: -301.5vh;
+    }
+    .strips .me .bio{
+      margin-left: 5%;
+    }
     .strips .me .bio p{
-      font-size: 2.5vmin;
+      font-size: 3vmin;
     }
     .strips .me .bio span{
-      font-size: 3vmin;
+      font-size: 3.5vmin;
     }
     .strips .me .biodata{
-      font-size: 2.5vmin;
-    }
-    .strips .me .biodata .bio-title{
       font-size: 3vmin;
     }
+    .strips .me .biodata .bio-title{
+      font-size: 3.5vmin;
+    }
+    .strips .me .biodata .language{
+      grid-template-columns: 30% 70%;
+    }
     .strips .me .biodata .media .social-media span{
-      font-size: 2.5vmin;
+      font-size: 3vmin;
       color: wheat;
     }
+    .strips .me .biodata .cv{
+      margin-top: -2%;
+    }
+    .strips .skills{
+      top: 50%;
+    }
+    .bar {
+      margin-top: -10%;
+      margin-left: 15%;
+    }
     .bar ul{
-      width: 85%;
+      width: 50%;
     }
     progress[value] {
       height: 15px;
@@ -2396,26 +2477,58 @@ and (max-device-width: 1279px) {
     p[data-value] { 
       font-size: 3vmin;
     }
+    .slide-image img {
+      width: 35vw;
+      height:85vh; 
+      margin-top: -20%;
+    }
+    .slide-image .pf{
+      width: 30vw;
+      height: 85vh;
+      margin-top: -15%;
+    }
+    .slide-title{
+      font-size: 7vmin;
+      margin-left: 15%;
+      padding-top: 85%;
+    }
+    .slide-content .personal{
+      margin-left: -5%;
+      padding-top: 95%;
+    }
+    .arrows{
+      margin-top: -3vh;
+      margin-left: 51vw;
+    }
     .strips .hnmn{
-      top: 15%;
+      top: 10%;
     }
     .strips .strip__inner-text .hnm{
       font-size: 3vmin;
+      margin-left: 5%;
+      margin-right: 10%;
     }
     .strips .strip__inner-text h3{
       font-size: 3.5vmin;
     }
+    .gallery {
+      width: 100%;
+      height:45vh;
+    }
+    .gallery__strip {
+      min-height: 10vh;
+      width: 15vw;
+    }
     .container .section-2 .pinned-quote h2 {
+      margin-top: 0%;
+      padding: 16px 16px 16px 16px;
       font-size: 7vmin;
     }
     .container .section-2 .pinned-quote p{
       font-size: 3vmin;
     }
     .container .section-2 .pinned-quote img{
-      height: 130vh;
-      width: 60vw;
-      margin-left: 60%;
-      margin-top: -65%;
+      display: none;
     }
     .container .section-3 h2{
       font-size: 7vmin;
@@ -2423,8 +2536,21 @@ and (max-device-width: 1279px) {
     .face{
       height: 40vh;
     }
+    .second .face1 .content img{
+      margin-top: 20px;
+    }
+    .third .face1 .content img{
+      margin-top: 35px;
+      margin-bottom: 5px;
+    }
+    .fourth .face1 .content img{
+      width: 40%;
+    }
     .face1 .content h3{
       font-size: 4vmin;
+    }
+    .third .face1 .content h3{
+      margin-top: 25px;
     }
     .face2 .content h4{
       font-size: 3.5vmin;
@@ -2434,6 +2560,7 @@ and (max-device-width: 1279px) {
     }
     .container .section-4 h3{
       font-size: 3.5vmin;
+      margin-top: 10%;
     }
     .container .section-4 h2{
       font-size: 5vmin;
@@ -2443,8 +2570,10 @@ and (max-device-width: 1279px) {
       margin-left: 28%;
     }
     .container .section-4 img{
-      margin-left: 0%;
-      margin-top: -30%;
+      height: 300px;
+      width: 450px;
+      margin-top: -25%;
+      margin-left: 75%;
     }
     .container .section-4 .mail{
       font-size: 3vmin;
@@ -2456,10 +2585,23 @@ and (max-device-width: 1279px) {
 
 @media only screen 
   and (min-device-width: 376px) 
-  and (max-device-width: 413px)
+  and (max-device-width: 414px)
   and (max-device-height: 812px)
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait){
+    .face{
+      height: 25vh;
+      width: 50vw;
+    }
+    .container .section-3 .second{
+      margin-top: 50vh !important;
+    }    
+    .container .section-3 .third{
+      margin-top: 100vh !important;
+    }
+    .container .section-3 .fourth{
+      margin-top: 150vh !important;
+    }
     .face2 .content p{
       font-size: 3vmin;
     }
@@ -2478,7 +2620,7 @@ and (max-device-width: 1279px) {
   }  
   .container .section-1 .image-mask {
     width: 75vw;
-    height: 28vh;
+    height: 24vh;
   }
   .face{
     height: 25vh;
@@ -2519,24 +2661,6 @@ and (max-device-width: 1279px) {
       width: 200px;
       margin-top: 10%
     }
-  }
-
-@media only screen 
-  and (min-device-width: 845px)
-  and (max-device-width: 926px)
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) {
-  
-}
-
-@media only screen 
-  and (min-device-width: 781px)
-  and (max-device-width: 812px)
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape){
-  .container .section-4 img{
-    margin-top: -35%;
-  }
 }
 
 @media only screen 
@@ -2544,31 +2668,12 @@ and (max-device-width: 1279px) {
   and (max-device-width: 780px)
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: landscape) {
-  .container .section-1 .image-mask {
-    height: 75vh;
-  }
-  .strips__strip {
-    min-height: 100vh;
-  }
-  .container .section-2 .pinned-quote img{
-    height: 120vh;
-    width: 70vw;
-    margin-top: -80%;
-    margin-left: 50%;
-  }
-  .face2 .content h4{
-    font-size: 3vmin;
-  }
-  .face2 .content p{
-    font-size: 2.5vmin;
-  }
-  .container .section-4 img{
-    margin-left: 0%;
-    margin-top: -35%;
-  }
-  .container .section-4 .mail{
-    font-size: 2.5vmin;
-  }
+    .container .section-4 img{
+      height: 280px;
+      width: 410px;
+      margin-top: -27%;
+      margin-left: 75%;
+    }
 }
 
 @media only screen 
@@ -2577,33 +2682,77 @@ and (max-device-width: 1279px) {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
   .container .section-1 .image-mask {
+    width: 70vw;
     height: 80vh;
   }
-  .strips__strip {
-    min-height: 100vh;
+  .strips .me .bio p{
+    font-size: 2.5vmin;
   }
-  .container .section-2 .pinned-quote img{
-    height: 120vh;
-    width: 70vw;
-    margin-top: -100%;
+  .strips .me .bio span{
+    font-size: 3vmin;
   }
-  .face1 .content h3{
-    font-size: 4vmin;
+  .strips .me .biodata{
+    font-size: 2.5vmin;
+  }
+  .strips .me .biodata .bio-title{
+    font-size: 3vmin;
+  }
+  .strip__title{
+    font-size: 5vmin;
+  }
+  .slide-image img {
+    width: 35vw;
+    height: 80vh; 
+    margin-top: -20%;
+  }
+  .slide-image .pf{
+    width: 30vw;
+    height: 80vh;
+    margin-top: -15%;
+  }
+  .slide-title{
+    font-size: 7vmin;
+    margin-left: 15%;
+    padding-top: 85%;
+  }
+  .slide-content .personal{
+    margin-left: -5%;
+    padding-top: 95%;
+  }
+  .arrows{
+    margin-top: 7vh;
+    margin-left: 52vw;
+  }
+  .strips .strip__inner-text .hnm{
+    font-size: 2.5vmin;
+  }
+  .strips .strip__inner-text h3{
+    font-size: 3vmin;
+  }
+  .face2 .content h4{
+    font-size: 3vmin;
   }
   .face2 .content p{
     font-size: 2.5vmin;
   }
-  .face2 .content h4{
+  .container .section-4 h3{
     font-size: 3vmin;
+    margin-top: 15%;
+  }
+  .container .section-4 h2{
+    font-size: 4.5vmin;
+  }
+  .container .section-4 p{
+    font-size: 2.5vmin;
   }
   .container .section-4 .mail{
     font-size: 2.5vmin;
   }
   .container .section-4 img{
-    height: 600px;
-    width: 600px;
-    margin-left: 0%;
+    height: 270px;
+    width: 390px;
     margin-top: -30%;
+    margin-left: 75%;
   }
 }
 
@@ -2612,29 +2761,73 @@ and (max-device-width: 1279px) {
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
-  .container .section-1 .image-mask {
-    width: 70vw;
-    height: 70vh;
-  }
-  .strips__strip {
-    min-height: 110vh;
-  }
-  .container .section-2 .pinned-quote img{
-    height: 130vh;
-    width: 70vw;
-    margin-left: 60%;
-    margin-top: -100%;
-  }
-  .face2 .content p{
+  .strips .me .bio p{
     font-size: 2.5vmin;
+  }
+  .strips .me .bio span{
+    font-size: 3vmin;
+  }
+  .strips .me .biodata{
+    font-size: 2.5vmin;
+  }
+  .strips .me .biodata .bio-title{
+    font-size: 3vmin;
+  }
+  .strip__title{
+    font-size: 5vmin;
+  }
+  .slide-image img {
+    width: 35vw;
+    height: 80vh; 
+    margin-top: -20%;
+  }
+  .slide-image .pf{
+    width: 30vw;
+    height: 80vh;
+    margin-top: -15%;
+  }
+  .slide-title{
+    font-size: 7vmin;
+    margin-left: 15%;
+    padding-top: 85%;
+  }
+  .slide-content .personal{
+    margin-left: -5%;
+    padding-top: 95%;
+  }
+  .arrows{
+    margin-top: 7vh;
+    margin-left: 52vw;
+  }
+  .strips .strip__inner-text .hnm{
+    font-size: 2.5vmin;
+  }
+  .strips .strip__inner-text h3{
+    font-size: 3vmin;
   }
   .face2 .content h4{
     font-size: 3vmin;
   }
+  .face2 .content p{
+    font-size: 2.5vmin;
+  }
+  .container .section-4 h3{
+    font-size: 3vmin;
+    margin-top: 15%;
+  }
+  .container .section-4 h2{
+    font-size: 4.5vmin;
+  }
+  .container .section-4 p{
+    font-size: 2.5vmin;
+  }
+  .container .section-4 .mail{
+    font-size: 2.5vmin;
+  }
   .container .section-4 img{
-    height: 600px;
-    width: 600px;
-    margin-left: 0%;
-    margin-top: -40%;
+    height: 250px;
+    width: 350px;
+    margin-top: -32%;
+    margin-left: 75%;
   }
 }

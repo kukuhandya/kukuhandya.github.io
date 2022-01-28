@@ -83,7 +83,7 @@
   width: 80vw;
   height: 85vh;
   object-fit: cover;
-  background: url("media/q.png");
+  background: url("media/kukuh.png");
   background-size: cover;
   background-position-x: 50%;
   background-position-y: 90%;
@@ -1953,7 +1953,6 @@ and (max-device-width: 1024px) {
     }
     .face{
       height: 20vh;
-      width: 50vw;
     }
     .container .section-4{
       height: 80vh;
@@ -2052,7 +2051,8 @@ and (max-device-width: 1024px) {
 /*media queries mobile*/
 @media only screen 
   and (min-device-width: 0px)
-  and (max-device-width: 480px) {
+  and (max-device-width: 480px)
+  and (orientation: portrait) {
     .container .home {
       grid-template-columns: 50% 50%;
     }
@@ -2591,7 +2591,6 @@ and (max-device-width: 1024px) {
   and (orientation: portrait){
     .face{
       height: 25vh;
-      width: 50vw;
     }
     .container .section-3 .second{
       margin-top: 50vh !important;
@@ -2624,7 +2623,6 @@ and (max-device-width: 1024px) {
   }
   .face{
     height: 25vh;
-    width: 50vw;
   }
   .container .section-3 .second{
     margin-top: 50vh !important;

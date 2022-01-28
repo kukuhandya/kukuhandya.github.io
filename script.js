@@ -116,7 +116,7 @@ var Expand = (function() {
 
 
 /* fadein section home */
-const observer1 = new IntersectionObserver(entries => {
+const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if(entry.isIntersecting) {
       document.querySelectorAll(".copy")[0].classList.add('fadeInLeft');
@@ -124,7 +124,7 @@ const observer1 = new IntersectionObserver(entries => {
   })
 })
 
-observer1.observe(document.querySelector('.home'));
+observer.observe(document.querySelector('.home'));
 
 
 /* fadein section 2 */

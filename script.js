@@ -1,4 +1,4 @@
-/* main locomotive scrolling */
+/*locomotive scrolling */
 
 const scroller = new LocomotiveScroll({
   el: document.querySelector('[data-scroll-container]'),

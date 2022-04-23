@@ -165,7 +165,7 @@ observer3.observe(document.querySelector('.flex'));
 
 
 /* fadein contact */
-const observer5 = new IntersectionObserver(entries => {
+const observer6 = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if(entry.isIntersecting) {
       document.querySelectorAll(".invitation")[0].classList.add('fadeInLeft');
@@ -173,7 +173,7 @@ const observer5 = new IntersectionObserver(entries => {
   })
 })
 
-observer5.observe(document.querySelector('.contact'));
+observer6.observe(document.querySelector('.contact'));
 
 
 

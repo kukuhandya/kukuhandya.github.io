@@ -26,25 +26,20 @@
   padding: 0 5rem;
   height: 100%;
 }
-.container .home .copy h2{
-  font-size: 5vmin;
-  font-weight: 500;
-  word-wrap: break-word;
-  margin-top: 30vh;
-  margin-left: 50%;
-  color:wheat;
-}
 .container .home .copy h1{
   font-size: 8vmin;
+  margin-top: 40vh;
   font-weight: 600;
   align-self: center;
-  margin-left: 50%;
+  margin-left: 30%;
   color:wheat;
 }
 .container .home .copy p{
   font-size: 2.5vmin;
+  font-weight: 600;
   align-self: center;
-  margin-left: 50%;
+  margin-top: 2%;
+  margin-left: 33%;
   color:wheat;
 }
 .container .home .image-wrapper {
@@ -602,11 +597,6 @@ p[data-value]:after {
   height:35vw; 
   cursor: pointer;
 }
-.slide-image .pf{
-  width: 23vw;
-  height: 65vh;
-  margin-top: -1%;
-}
 .slide-content {
   width: 30vw; 
   color: wheat; 
@@ -636,7 +626,7 @@ div.overlay-blue {
 }
 .arrows{
   width: 3.5vw; 
-  margin-top: 20vh;
+  margin-top: 7vh;
   margin-left: 35vw;
   position: relative;
 }
@@ -851,48 +841,6 @@ div.overlay-blue {
   display: block;
   border-bottom: 3px double wheat;
 }
-.container .section-2 .clicked1{
-  font-size: 2vmin;
-  position: relative;
-  padding: 30px 30px;
-  color: wheat;
-  text-transform: uppercase;
-  transition: 0.5s;
-  letter-spacing: 4px;
-  border: 1px solid wheat;
-  margin-top: 85vh;
-  display: none;
-}
-.container .section-2 .click .clicked{
-  font-size: 2vmin;
-  position: relative;
-  display: inline-block;
-  padding: 30px 30px;
-  color: wheat;
-  text-transform: uppercase;
-  transition: 0.5s;
-  letter-spacing: 4px;
-  border: 1px solid wheat;
-  margin-top: 85vh;
-}
-.container .section-2 .clicked1:hover{
-  background: wheat;
-  color: #050801;
-  box-shadow: 0 0 5px wheat,
-              0 0 25px wheat,
-              0 0 50px wheat,
-              0 0 200px wheat;
-   -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
-}
-.container .section-2 .clicked:hover{
-  background: wheat;
-  color: #050801;
-  box-shadow: 0 0 5px wheat,
-              0 0 25px wheat,
-              0 0 50px wheat,
-              0 0 200px wheat;
-   -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
-}
 .fa {
   color: wheat;
   font-size: 2vmin;
@@ -900,7 +848,6 @@ div.overlay-blue {
 .checked {
   color: goldenrod;
 }
-
 
 
 
@@ -924,10 +871,10 @@ div.overlay-blue {
 
 }
 .entries {
-  max-width: 85vw;
-  margin: auto;
+  max-width: 95vw;
+  margin: 0.5%;
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: 20% 20% 20% 20% 20%;
   grid-column-gap: 1%;
 }
 .entry {
@@ -946,7 +893,7 @@ div.overlay-blue {
     align-items: center;
 }
 .face{
-    width: 21.6vw;
+    width: 19vw;
     height: 27.7vh;
     transition: 0.5s;
     display: flex;
@@ -989,7 +936,13 @@ div.overlay-blue {
   width: 70%;
 }
 .fourth .face1 .content img{
-  width: 60%;
+  width: 100%;
+}
+.fifth .face1 .content img{
+  width: 100%;
+}
+.sixth .face1 .content img{
+  width: 75%;
 }
 .face1 .content h3{
     margin: 5px 0 0;
@@ -1008,6 +961,9 @@ div.overlay-blue {
   margin-top: 45px;
 }
 .fourth .face1 .content h3{
+  margin-top: 10px;
+}
+.fifth .face1 .content h3{
   margin-top: 10px;
 }
 .face2{
@@ -1029,12 +985,12 @@ div.overlay-blue {
 .face2 .content h4{
   word-wrap: break-word;
   margin-bottom: 10%;
-  font-size: 2.5vmin;
+  font-size: 2vmin;
   font-weight:600;
   margin-top: -10%;
 }
 .face2 .content p{
-    font-size: 2vmin;
+    font-size: 1.7vmin;
     color: black;
 }
 
@@ -1054,25 +1010,25 @@ div.overlay-blue {
   z-index:2;
 }
 .container .section-4 h3{
-  font-size: 2.5vmin;
+  font-size: 3vmin;
   font-weight: 800;
   z-index:2;
 }
 .container .section-4 h2{
-  font-size: 4vmin;
+  font-size: 5vmin;
   font-weight: 900;
   margin-bottom: 0.5%;
   z-index:2;
 }
 .container .section-4 p{
-  width: 43vw;
-  font-size: 2vmin;
+  width: 70vw;
+  font-size: 2.5vmin;
   z-index: 2;
-  margin-left: 28%;
+  margin-left: 15%;
   margin-bottom: 3%;
 }
 .container .section-4 .mail{
-  font-size: 2vmin;
+  font-size: 2.5vmin;
   position: relative;
   display: inline-block;
   padding: 30px 30px;
@@ -1086,9 +1042,9 @@ div.overlay-blue {
 }
 .container .section-4 img{
   position: relative;
-  height: 400px;
-  width: 650px;
-  margin-left: -4%;
+  height: 600px;
+  width: 850px;
+  margin-left: -3%;
   opacity: 0.5;
   z-index: 1;
 }
@@ -1177,7 +1133,7 @@ div.overlay-blue {
 
 .footer{
   width: 20vw;
-  font-size: 2vmin;
+  font-size: 2.5vmin;
   font-weight: 400;
   word-wrap: break-word;
   color:wheat;
@@ -1197,9 +1153,6 @@ and (min-device-width: 2500px) {
     margin-top: 7vh;
   }
   .second .face1 .content img{
-    width: 100%;
-  }
-  .fourth .face1 .content img{
     width: 100%;
   }
 }
@@ -1284,11 +1237,6 @@ and (device-height: 1024px) {
     height: 60vh;
     margin-top: 0%;
   }
-  .slide-image .pf{
-    width: 35vw;
-    height: 70vh;
-    margin-top: -5%;
-  }
   .slide-title{
     font-size: 6vmin;
     margin-left: -50%;
@@ -1338,11 +1286,6 @@ and (max-device-width: 1024px) {
   .slide-image img {
     width: 35vw;
     height: 60vh;
-    margin-top: 10%;
-  }
-  .slide-image .pf{
-    width: 35vw;
-    height: 70vh;
     margin-top: 10%;
   }
   .slide-title{
@@ -1511,11 +1454,6 @@ and (max-device-width: 1024px) {
     height:70vh; 
     margin-top: 0%;
   }
-  .slide-image .pf{
-    width: 35vw;
-    height: 80vh;
-    margin-top: -10%;
-  }
   .slide-title{
     font-size: 6vmin;
     margin-left: 10%;
@@ -1541,15 +1479,6 @@ and (max-device-width: 1024px) {
     padding: 16px 16px 16px 16px;
     font-size: 6vmin;
   }
-  .container .section-2 .clicked1{
-    display: inline-block;
-    margin-top: 70vh;
-    margin-left: 10vw;
-    padding: 25px 25px;
-  }
-  .container .section-2 .click{
-    display: none;
-  }
   .container .section-3 h2{
     font-size: 6vmin;
   }
@@ -1563,9 +1492,6 @@ and (max-device-width: 1024px) {
   .third .face1 .content img{
     margin-top: 35px;
     margin-bottom: 5px;
-  }
-  .fourth .face1 .content img{
-    width: 70%;
   }
   .face1 .content h3{
     font-size: 3vmin;
@@ -1678,9 +1604,6 @@ and (max-device-width: 1024px) {
   }
   .slide-image img {
     margin-top: 10%;
-  }
-  .slide-image .pf{
-    margin-top: 0%;
   }
   .slide-title{
     font-size: 6vmin;
@@ -1834,11 +1757,6 @@ and (max-device-width: 1024px) {
     height: 50vh;
     margin-top: -20%;
   }
-  .slide-image .pf{
-    width: 50vw;
-    height: 55vh;
-    margin-top: -30%;
-  }
   .slide-title{
     font-weight: 500;
     font-size: 6vmin;
@@ -1887,14 +1805,6 @@ and (max-device-width: 1024px) {
   .container .section-2 .pinned-quote{
     display: none;
   }
-  .container .section-2 .click .clicked{
-    font-size: 3vmin;
-    position: relative;
-    margin-left: 40vw;
-    display: inline-block;
-    padding: 30px 30px;
-    margin-top: 5vh;
-  }
   .container .section-3{
     margin-top: 0%;
     margin-bottom: 0vh;
@@ -1917,9 +1827,6 @@ and (max-device-width: 1024px) {
   .face{
     height: 25vh;
     width: 45vw;
-  }
-  .fourth .face1 .content img{
-    width: 100%;
   }
   .face1 .content h3{
     font-size: 3.5vmin;
@@ -2100,11 +2007,6 @@ and (max-device-width: 1024px) {
       height: 45vh;
       margin-top: 5%;
     }
-    .slide-image .pf{
-      width: 55vw;
-      height: 50vh;
-      margin-top: -15%;
-    }
     .slide-title{
       font-size: 7vmin;
       margin-top: 16vh;
@@ -2263,12 +2165,6 @@ and (max-device-width: 1024px) {
       height:85vh; 
       margin-top: -30%;
     }
-    .slide-image .pf{
-      width: 25vw;
-      height: 85vh;
-      margin-left: 10%;
-      margin-top: -30%;
-    }
     .slide-title{
       font-size: 7vmin;
       margin-left: 2%;
@@ -2294,11 +2190,6 @@ and (max-device-width: 1024px) {
       padding: 16px 16px 16px 16px;
       font-size: 7vmin;
     }
-    .container .section-2 .clicked1{
-      font-size: 2.5vmin;
-      margin-top: 60vh;
-      margin-left: 13vw;
-    }
     .container .section-3 h2{
       font-size: 7vmin;
     }
@@ -2311,9 +2202,6 @@ and (max-device-width: 1024px) {
     .third .face1 .content img{
       margin-top: 35px;
       margin-bottom: 5px;
-    }
-    .fourth .face1 .content img{
-      width: 40%;
     }
     .face1 .content h3{
       font-size: 4vmin;
